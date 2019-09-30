@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "sims.cpp"
+#include "sims.h"
 using namespace std;
 
 int main() {
@@ -35,7 +35,7 @@ int main() {
         cout << "  Membaca Koran"<< endl;
         cout << "  Membaca Novel"<< endl;
         cout << "------------------------------------------"<<endl;
-         cout << "\n";
+        cout << "\n";
         cout << "Tuliskan aksi yang kamu ingin lakukan sekarang" << endl;
         cout << "(Setiap kata diawali huruf kapital, kecuali kata depan ya~~)" << endl;
         cout << "\n";
@@ -77,6 +77,7 @@ int main() {
         } else if(str == "Membaca Novel") {
             changeState(&current,Membaca('n'));
         } else {
+            cout << "\n";
             cout << "Input salah!" << endl;
         }
         cout << "\n";

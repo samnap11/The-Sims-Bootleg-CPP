@@ -38,11 +38,11 @@ Jika tidak, diberi pesan error */
 void printState(State x)
 /* Mencetak ke layar state saat ini */
 {
-   cout << "<<<<<<<<<<<<<<>>>>>>>>>>>>>>>"<<endl;
+   cout << "<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>"<<endl;
     cout << "     Hygiene = " << x.Hygiene  <<endl;
     cout << "     Energy  = " << x.Energy  <<endl;
     cout << "     Fun     = " << x.Fun     <<endl;
-    cout << "<<<<<<<<<<<<<<>>>>>>>>>>>>>>>"<<endl;
+    cout << "<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>"<<endl;
 }
 
 State adjustState(State x, State y)

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "sims.h"
+#include "sims.cpp"
 using namespace std;
 
 int main() {
@@ -14,8 +14,30 @@ int main() {
     printState(current);
     while(!isDead(current) && !isFull(current)) {
         cout << "\n";
+        cout << "------------------------------------------"<<endl;
+        cout << "Kamu mau apa nih sekarang?"<< endl;
+        cout << "  Tidur Siang"<< endl;
+        cout << "  Tidur Malam"<< endl;
+        cout << "  Makan Hamburger"<< endl;
+        cout << "  Makan Pizza"<< endl;
+        cout << "  Makan Steak and Beans"<< endl;
+        cout << "  Minum Air"<< endl;
+        cout << "  Minum Kopi"<< endl;
+        cout << "  Minum Jus"<< endl;
+        cout << "  Buang Air Kecil"<< endl;
+        cout << "  Buang Air Besar"<< endl;
+        cout << "  Bersosialisasi ke Kafe"<< endl;
+        cout << "  Bermain Media Sosia"<< endl;
+        cout << "  Bermain Komputer"<< endl;
+        cout << "  Mandi"<< endl;
+        cout << "  Cuci Tangan"<< endl;
+        cout << "  Mendengarkan Musik di Radio"<< endl;
+        cout << "  Membaca Koran"<< endl;
+        cout << "  Membaca Novel"<< endl;
+        cout << "------------------------------------------"<<endl;
+         cout << "\n";
         cout << "Tuliskan aksi yang kamu ingin lakukan sekarang" << endl;
-        cout << "(Setiap kata diawali huruf kapital, kecuali kata depan)" << endl;
+        cout << "(Setiap kata diawali huruf kapital, kecuali kata depan ya~~)" << endl;
         cout << "\n";
         getline(cin,str);
         if(str == "Tidur Siang") {
